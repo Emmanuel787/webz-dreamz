@@ -35,7 +35,9 @@
       -webkit-animation: zoomOut 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
         -o-animation: zoomOut 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: 5s;
-
+  @include responsive(phone){
+    animation-delay: 4.5s;
+  }
   @keyframes zoomOut {
     0%{
       background-size: 150%;
@@ -77,7 +79,7 @@
         opacity: .5;
       }
       100%{
-        background-size: 350%;
+        background-size: 400%;
         opacity: 1;
       }
     }
@@ -110,6 +112,9 @@
       -webkit-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
         -o-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: 4.5s;
+  @include responsive(phone){
+    animation-delay: 3.2s;
+  }
 
   @keyframes go-left {
     0%{
@@ -196,18 +201,15 @@
       50%{
         left: 0;
         width: 0%;
-        margin-top: 10em;
+        top: 7em;
         opacity: .3;
       }
       100%{
         left: 0;
-        width: 180%;
-        margin-top: 0em;
+        width: 190%;
         opacity: .3;
-        // height: 10em;
-        margin-left: 2em;
-        margin-top: 0em;
-        transform: rotate(25deg);
+        left: -5em;
+        top: 0em;
       }
     }
   }

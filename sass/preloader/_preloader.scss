@@ -39,9 +39,17 @@
   @include typo(3em, $darko, 100);
   font-family: $title-font;
   overflow: hidden;
-  margin-left: .3em;
+  margin-right: .4em;
   opacity: 0;
-
+  &:last-child{
+    margin-left: 0;
+  }
+  @include responsive(tab-port){
+    @include typo(2.5em, $darko, 100);
+  }
+  @include responsive(phone){
+    @include typo(2em, $darko, 100);
+  }
   span{
     transform: translateY(100%);
   }
@@ -52,4 +60,5 @@ svg{
   height: 100px;
   margin: 20px;
   display:inline-block;
+  margin-left: 3.2em;
 }

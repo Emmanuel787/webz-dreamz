@@ -3,6 +3,7 @@
   @include typo(1.5em, $white, 500);
   font-family: $title-font;
 }
+
 .ehs-ul{
   @include responsive(phone){
     display: none;
@@ -15,16 +16,16 @@
       cursor: pointer;
       color: rgb(179, 179, 179);
     }
-
   }
 }
-
 
 .ecb-text{
   @include typo(7em, $white, 500);
   font-family: $hs-title-font;
+  @include responsive(phone){
+    @include typo(6.5em, $white, 500);
+  }
 }
-
 .ecb-color-anim{
   animation: colorChange 40s cubic-bezier(0.19, 1, 0.22, 1) infinite  ;
     -moz-animation: colorChange 40s cubic-bezier(0.19, 1, 0.22, 1) infinite;
