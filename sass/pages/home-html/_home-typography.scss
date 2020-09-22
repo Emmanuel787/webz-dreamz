@@ -29,7 +29,7 @@
   font-style: normal;
 
   @include responsive(phone){
-    @include typo(10em, $white, 500);
+    @include typo(9em, $white, 500);
   }
 }
 .ecb-color-anim{
