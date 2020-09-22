@@ -1,0 +1,9 @@
+.c-ehs-ul{
+  .c-ehs-nav-list{
+    display: inline-block;
+    margin-right: 2em;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
