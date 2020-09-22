@@ -1,7 +1,8 @@
 //el-hero-section
 .el-brand{
   @include typo(1.5em, $white, 500);
-  font-family: $title-font;
+  // font-family: $title-font;
+  font-family: $content-font;
 }
 
 .ehs-ul{
@@ -11,7 +12,8 @@
   .ehs-nav-list{
     @include typo(1em, $white, 500);
     transition: color .3s ease-in-out;
-    font-family: $title-font;
+    // font-family: $title-font;
+    font-family: $content-font;
     &:hover{
       cursor: pointer;
       color: rgb(179, 179, 179);
@@ -20,8 +22,12 @@
 }
 
 .ecb-text{
-  @include typo(7em, $white, 500);
+  @include typo(9em, $white, 800);
+  line-height: 1em;
   font-family: $hs-title-font;
+  font-weight: 400;
+  font-style: normal;
+
   @include responsive(phone){
     @include typo(6.5em, $white, 500);
   }

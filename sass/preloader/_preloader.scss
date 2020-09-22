@@ -37,7 +37,9 @@
 
 .intro-two-title{
   @include typo(3em, $darko, 100);
-  font-family: $title-font;
+  font-family: $hs-title-font;
+  font-weight: 400;
+  font-style: normal;
   overflow: hidden;
   margin-right: .4em;
   opacity: 0;
