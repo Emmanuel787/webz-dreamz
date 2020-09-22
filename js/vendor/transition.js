@@ -25,6 +25,7 @@ $(document).ready(function () {
       ease: "Expo.easeInOut",
       delay: 0.3,
     });
+
     tl.set(".loading-screen", { bottom: "-100%" });
   }
 
@@ -62,13 +63,60 @@ $(document).ready(function () {
             });
             //rellax-re-init:end
 
-            //hero-sections-animate:start
-            $(".el-hero-section, .a-el-hero-section, .g-el-hero-section, .c-el-hero-section")
-              .delay(400)
-              .velocity("transition.slideUpIn", 2000);
-            //hero-sections-animate:end
 
-            $(".el-main-preloader").fadeOut(2000);
+            $('.svg-dark').delay(500).fadeOut();
+
+            $('.svg-dark').delay(500).fadeOut();
+
+            const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
+
+            //hero-center-text:start
+            //home
+            tl.to('.intro-two-title', { y: '0%', duration: 0.7, delay: 1, opacity: 1, stagger: 0.05 });
+
+            tl.to('.intro-two-title', { y: '100%', duration: 1, delay: 0.2, opacity: 1, stagger: 0.05 });
+
+            //hero-center-text:end
+
+            //intro-one:start
+            tl.to('.intro-one', {
+              y: '0%',
+              duration: 0.7,
+              delay: 0.2
+            }, '-=.9');
+
+            tl.to('.intro-one', {
+              y: '-100%',
+              duration: 0.5,
+              delay: 0.5
+            });
+            //intro-one:end
+
+            //intro-two:start
+            tl.to('.intro-two', {
+              y: '-100%',
+              duration: 0.5,
+              delay: 0.5,
+            }, '-=.9');
+            //intro-two:end
+
+            //intro-three:start
+            tl.to('.intro-three', {
+              y: '-100%',
+              duration: 0.5,
+              delay: 0.5,
+            }, '-=.9');
+            //intro-three:end
+
+            // animate background and center box on startup:start
+            $('.el-hero-section').delay(2000).addClass('ehs-bg-anim');
+            $('.ehs-anim-box').delay(1000).addClass('ehs-anim');
+            // animate background and center box on startup:end
+
+            //hero-center-text:start
+            tl.to('.ecb-text', { y: '0%', duration: 0.7, delay: 0.6, stagger: 0.10 }, '-=.9');
+            //hero-center-text:end
+
           },
 
 

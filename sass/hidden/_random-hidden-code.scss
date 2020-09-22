@@ -1,5 +1,10 @@
 .hide{
-  display: none;
+  overflow: hidden;
+
+  span{
+    transform: translateY(100%);
+    display: inline-block;
+  }
 }
 
 .show{

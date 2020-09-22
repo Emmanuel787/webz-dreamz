@@ -10,37 +10,205 @@
 
 .el-hero-section{
   @include col(4/4); margin-right: 0;
-  background: url(/resources/img/hero/g-hero-bg.jpg) no-repeat center center;
-  background-size: cover;
+  background: url(/resources/img/hero/hero-bg-edit-2.jpg) no-repeat center center;
+  background-size: 150%;
   background-color: #817f7ffa;
   background-blend-mode: multiply;
   display: flex !important;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  opacity: .5;
+  @include responsive(tab-land){
+    background-size: 180%;
+  }
+  @include responsive(tab-port){
+    background-size: 240%;
+  }
+  @include responsive(phone){
+    background-size: 500%;
+  }
+}
+.ehs-bg-anim{
+  animation: zoomOut 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -moz-animation: zoomOut 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -webkit-animation: zoomOut 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -o-animation: zoomOut 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 5s;
+
+  @keyframes zoomOut {
+    0%{
+      background-size: 150%;
+      opacity: .5;
+    }
+    100%{
+      background-size: 120%;
+      opacity: 1;
+    }
+  }
+  @include responsive(tab-land){
+    @keyframes zoomOut {
+      0%{
+        background-size: 180%;
+        opacity: .5;
+      }
+      100%{
+        background-size: 160%;
+        opacity: 1;
+      }
+    }
+  }
+  @include responsive(tab-port){
+    @keyframes zoomOut {
+      0%{
+        background-size: 240%;
+        opacity: .5;
+      }
+      100%{
+        background-size: 190%;
+        opacity: 1;
+      }
+    }
+  }
+  @include responsive(phone){
+    @keyframes zoomOut {
+      0%{
+        background-size: 500%;
+        opacity: .5;
+      }
+      100%{
+        background-size: 350%;
+        opacity: 1;
+      }
+    }
+  }
 }
 
-// .ahs-anim{
-//     animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//       -moz-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//         -webkit-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//           -o-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//     animation-delay: .5s;
+.ehs-center-box{
+  width: 40%;
+  min-height: 20em;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-//     @keyframes go-left {
-//       0% {
-//         left: 0;
-//         width: 0%;
-//       }
-//       50% {
-//         left: 0;
-//         width: 90%;
-//         margin-left: 8%;
-//       }
-//       100% {
-//         left: 0;
-//         width: 90%;
-//         margin-left: 5%;
-//       }
-//     }
-//   }
+  .ehs-anim-box{
+    width: 0%;
+    position: absolute;
+    min-height: 20em;
+    background: #414244;
+    left: 0;
+    opacity: 1;
+    transform: rotate(45deg);
+  }
+}
+
+.ehs-anim{
+  animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -moz-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -webkit-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -o-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 4.5s;
+
+  @keyframes go-left {
+    0%{
+      left: 0;
+      width: 0%;
+      opacity: 1;
+    }
+    50%{
+      left: 0;
+      width: 60%;
+      margin-left: 7em;
+      margin-top: 7em;
+    }
+    70%{
+      left: 0;
+      width: 60%;
+      margin-left: 7em;
+    }
+    80%{
+      left: 0;
+      width: 60%;
+      margin-left: 7em;
+    }
+    90%{
+      left: 0;
+      width: 60%;
+      margin-left: 7em;
+    }
+    100%{
+      left: 0;
+      width: 60%;
+      margin-left: 7em;
+      opacity: .3;
+      height: 20em;
+      margin-top: 0;
+    }
+  }
+  @include responsive(tab-land){
+    @keyframes go-left {
+      0%{
+        left: 0;
+        width: 0%;
+        opacity: 1;
+      }
+      100%{
+        left: 0;
+        width: 80%;
+        margin-top: 0em;
+        margin-left: 3em;
+        opacity: .3;
+        height: 17em;
+      }
+    }
+  }
+  @include responsive(tab-port){
+    @keyframes go-left {
+      0%{
+        left: 0;
+        width: 0%;
+        opacity: 1;
+      }
+      50%{
+        left: 0;
+        width: 100%;
+        margin-top: 7em;
+        opacity: .3;
+      }
+      100%{
+        left: 0;
+        width: 100%;
+        margin-top: 0em;
+        opacity: .3;
+        height: 20em;
+      }
+    }
+  }
+  @include responsive(phone){
+    @keyframes go-left {
+      0%{
+        left: 0;
+        width: 0%;
+        opacity: 1;
+      }
+      50%{
+        left: 0;
+        width: 0%;
+        margin-top: 10em;
+        opacity: .3;
+      }
+      100%{
+        left: 0;
+        width: 180%;
+        margin-top: 0em;
+        opacity: .3;
+        // height: 10em;
+        margin-left: 2em;
+        margin-top: 0em;
+        transform: rotate(25deg);
+      }
+    }
+  }
+}

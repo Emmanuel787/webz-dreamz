@@ -1,16 +1,1 @@
-.a-el-brand{
-  @include typo(1.5em, $white, 500);
-  font-family: $title-font;
-}
-.a-ehs-nav-list {
-  @include typo(1em, $white, 500);
-  transition: color .3s ease-in-out;
-  font-family: $title-font;
-  &:hover{
-    color: rgb(41, 40, 41);
-  }
-}
-.a-ecb-text{
-  @include typo(5em, $white, 500);
-  font-family: $hs-title-font;
-}
+//

@@ -1,8 +1,55 @@
-.el-main-preloader{
+.intro-one{
   @include col(4/4); margin-right: 0;
   height: 100vh;
   position: fixed;
-  top: 0; left: -100em;
-  background-color: rgb(255, 255, 255);
-  z-index: 2000;
+  top: 0; left: 0;
+  background-color: rgb(24, 24, 24);
+  z-index: 100;
+  transform: translateY(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.intro-two{
+  @include col(4/4); margin-right: 0;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgb(247, 247, 247);
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-three{
+  @include col(4/4); margin-right: 0;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-two-title{
+  @include typo(3em, $darko, 100);
+  font-family: $title-font;
+  overflow: hidden;
+  margin-left: .3em;
+  opacity: 0;
+
+  span{
+    transform: translateY(100%);
+  }
+}
+
+svg{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display:inline-block;
 }

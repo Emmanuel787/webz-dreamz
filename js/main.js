@@ -1,4 +1,12 @@
 $(window).scrollTop(0);
+
+//startup loader:start
+// $(window).on('load', function () {
+
+
+// });
+//startup loader:end
+
 ////////////////////////////////////////////////@2020
 
 // reveal on scroll:start
@@ -7,34 +15,11 @@ new WOW().init();
 
 ////////////////////////////////////////////////@2020
 
-//smooth scroll:start
-
-//smooth scroll:end
-
-
-////////////////////////////////////////////////@2020
-
-//startup loader:start
-$(window).on('load',function () {
-  $('.el-main-preloader').fadeOut(2000);
-  //los-hero-sections-animate:start
-  $(".el-hero-section, .a-el-hero-section, .g-el-hero-section, .c-el-hero-section").velocity("transition.slideUpIn", 2000);
-  //los-hero-sections-animate:end
-
-});
-//startup loader:end
-
 //rellax #2:start
 var rellax = new Rellax(".rellax", {
   center: true,
 });
 //rellax #2:end
-
-////////////////////////////////////////////////@2020
-
-
-////////////////////////////////////////////////@2020
-
 
 ////////////////////////////////////////////////@2020
 
@@ -95,9 +80,6 @@ if (document.querySelector("[data-easing]")) {
 /*
 one page smooth scroll easing:start
 */
-
-////////////////////////////////////////////////@2020
-
 
 ////////////////////////////////////////////////@2020
 
@@ -178,3 +160,4 @@ if !E=doThisHere():end
 */
 
 ////////////////////////////////////////////////@2020
+

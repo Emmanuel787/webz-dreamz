@@ -3,15 +3,54 @@
   @include typo(1.5em, $white, 500);
   font-family: $title-font;
 }
-.ehs-nav-list {
-  @include typo(1em, $white, 500);
-  transition: color .3s ease-in-out;
-  font-family: $title-font;
-  &:hover{
-    color: rgb(41, 40, 41);
+.ehs-ul{
+  @include responsive(phone){
+    display: none;
+  }
+  .ehs-nav-list{
+    @include typo(1em, $white, 500);
+    transition: color .3s ease-in-out;
+    font-family: $title-font;
+    &:hover{
+      cursor: pointer;
+      color: rgb(179, 179, 179);
+    }
+
   }
 }
+
+
 .ecb-text{
-  @include typo(5em, $white, 500);
+  @include typo(7em, $white, 500);
   font-family: $hs-title-font;
+}
+
+.ecb-color-anim{
+  animation: colorChange 40s cubic-bezier(0.19, 1, 0.22, 1) infinite  ;
+    -moz-animation: colorChange 40s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+      -webkit-animation: colorChange 40s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+        -o-animation: colorChange 40s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+  animation-delay: 5s;
+
+  @keyframes colorChange {
+    0%{
+      color: $white;
+    }
+    25%{
+      color: rgb(196, 78, 78);
+    }
+    50%{
+      color: rgb(84, 139, 114);
+    }
+    75%{
+      color: rgb(37, 37, 37);
+    }
+    100%{
+      color: $white;
+    }
+  }
+}
+
+.g50-txt{
+  color: $tertiary-color;
 }
