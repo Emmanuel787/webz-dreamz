@@ -77,11 +77,10 @@
     @keyframes zoomOut {
       0%{
         background-size: 175%;
-        opacity: .9;
+        opacity: 1;
       }
       100%{
         background-size: 175%;
-         background: url(/resources/img/hero/hero-bg-edit-3.jpg) no-repeat center center;
         opacity: 1;
       }
     }
