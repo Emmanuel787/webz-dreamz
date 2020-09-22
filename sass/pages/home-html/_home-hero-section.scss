@@ -27,7 +27,7 @@
   }
   @include responsive(phone){
     background: url(/resources/img/hero/hero-bg-edit-phone.jpg) no-repeat center center;
-    background-size: 250%;
+    background-size: 200%;
   }
 }
 .ehs-bg-anim{
@@ -76,7 +76,7 @@
   @include responsive(phone){
     @keyframes zoomOut {
       0%{
-        background-size: 250%;
+        background-size: 200%;
         opacity: .5;
       }
       100%{
