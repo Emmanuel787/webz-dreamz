@@ -161,3 +161,6 @@ if !E=doThisHere():end
 
 ////////////////////////////////////////////////@2020
 
+// $('.nav-li-itz').on('click', function(){
+//   $('.el-hero-section').velocity("transition.slideUpOut", 1000);
+// });

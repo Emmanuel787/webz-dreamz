@@ -49,5 +49,7 @@ $(window).on('load', function () {
   //hero-center-text:start
   tl.to('.ecb-text', { y: '0%', duration: 0.7, delay: 0.5, stagger: 0.10 }, '-=.9');
   //hero-center-text:end
-
+  //hero-center-text:start
+  tl.to('.ahs-il-txt', { y: '0%', duration: 0.7, delay: 0.5, stagger: 0.10 }, '-=.9');
+  //hero-center-text:end
 });
