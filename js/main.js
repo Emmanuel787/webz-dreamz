@@ -161,6 +161,7 @@ if !E=doThisHere():end
 
 ////////////////////////////////////////////////@2020
 
-// $('.nav-li-itz').on('click', function(){
-//   $('.el-hero-section').velocity("transition.slideUpOut", 1000);
+//coming-soon-box-animation
+// $('.coming-soon-note').delay(9000).css({
+//   "background":"#252525"
 // });
