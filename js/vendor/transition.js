@@ -31,6 +31,7 @@ $(document).ready(function () {
 
   function contentAnimation() {
     var tl = gsap.timeline();
+
   }
 
   $(function () {
@@ -54,84 +55,33 @@ $(document).ready(function () {
           //after the transition this will re-init...//
           async enter(data) {
             contentAnimation();
+            $('.preloader').fadeOut(1000);
 
-            $(window).scrollTop(0);
-
-            //rellax-re-init:start
-            var rellax = new Rellax(".rellax", {
-              center: false,
+            //button-effects
+            $('.ehs-gtb, .a-ehs-gtb').on('mouseenter', function () {
+              $('.ehs-temp-title, .a-ehs-temp-title').css({
+                "color": "white"
+              });
             });
-            //rellax-re-init:end
-
-
-            $('.svg-dark').delay(500).fadeOut();
-
-            $('.svg-dark').delay(500).fadeOut();
-
-            const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
-
-            //hero-center-text:start
-            //home
-            tl.to('.intro-two-title', { y: '0%', duration: 0.7, delay: 1, opacity: 1, stagger: 0.05 });
-
-            tl.to('.intro-two-title', { y: '100%', duration: 1, delay: 0.2, opacity: 1, stagger: 0.05 });
-
-            //hero-center-text:end
-
-            //intro-one:start
-            tl.to('.intro-one', {
-              y: '0%',
-              duration: 0.7,
-              delay: 0.2
-            }, '-=.9');
-
-            tl.to('.intro-one', {
-              y: '-100%',
-              duration: 0.5,
-              delay: 0.5
+            $('.ehs-gtb, .a-ehs-gtb').on('mouseleave', function () {
+              $('.ehs-temp-title, .a-ehs-temp-title').css({
+                "color": ""
+              });
             });
-            //intro-one:end
 
-            //intro-two:start
-            tl.to('.intro-two', {
-              y: '-100%',
-              duration: 0.5,
-              delay: 0.5,
-            }, '-=.9');
-            //intro-two:end
-
-            //intro-three:start
-            tl.to('.intro-three', {
-              y: '-100%',
-              duration: 0.5,
-              delay: 0.5,
-            }, '-=.9');
-            //intro-three:end
-
-            // animate background and center box on startup:start
-            $('.el-hero-section').delay(2000).addClass('ehs-bg-anim');
-            $('.ehs-anim-box').delay(1000).addClass('ehs-anim');
-            // animate background and center box on startup:end
-
-            //hero-center-text:start
-
-            tl.to('.ecb-text', { y: '0%', duration: 0.7, delay: 0.6, stagger: 0.10 }, '-=.9');
-
-            tl.to('.ahs-il-txt', { y: '0%', duration: 0.7, delay: 0.8, stagger: 0.10 }, '-=4');
-
-            $('.nav-li-itz').on('click', function () {
-              $('.el-hero-section').velocity("transition.slideUpOut", 1000);
+            $('.ehs-gtb, .a-ehs-gtb').on('click', function () {
+              $('.ehs-temp-title, .a-ehs-temp-title').css({
+                "margin-top": "-2em"
+              });
             });
 
 
-            //hero-center-text:end
 
           },
 
 
           async once(data) {
             contentAnimation();
-
 
           },
         },

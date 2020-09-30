@@ -3,12 +3,15 @@
 @import 'jeet/index';
 @import "config/manifest";
 @import "reset/manifest";
-@import "random-hidden-code";
+@import "hidden/manifest";
+@import "random-animations";
 @import "typography/manifest";
 @import "preloader/manifest";
 @import "cards/manifest";
 @import "buttons/manifest";
 @import "barba/manifest";
+@import "reduced-motion/manifest";
+
 // Pages
 @import "Pages/manifest";
 

@@ -1,17 +1,18 @@
-//
-.ahs-il-txt{
-  @include typo(3em, $white, 400);
-  font-family: $aviano;
-  line-height: 1.3em;
-  font-style: normal;
+//header
+.a-el-brand{
+  @include typo(1.2em, $white, 400);
+  font-family: bd-colonius, sans-serif;
 }
-.smaller-ui-txt{
-  @include typo(4em, $white, 400);
-  font-family: $aviano;
+
+//hero-section
+.a-ehs-temp-title{
+  @include typo(7em, $secondary-color, 900);
+  font-family: bd-colonius, sans-serif;
+  transition: color .3s ease-in-out;
+  transition: margin-top 1s ease-in;
 }
-.small-ui-txt{
-  @include typo(1.5em, $tertiary-color, 300);
-  margin-top: .3em;
-  margin-left: .2em;
-  font-family: $hs-title-font;
+
+//random-codez
+.sc__{
+  color: $secondary-color;
 }

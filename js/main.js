@@ -1,12 +1,8 @@
 $(window).scrollTop(0);
 
-//startup loader:start
-// $(window).on('load', function () {
-
-
-// });
-//startup loader:end
-
+$(window).on('load', function(){
+  $('.preloader').delay(1700).fadeOut(1000);
+});
 ////////////////////////////////////////////////@2020
 
 // reveal on scroll:start
@@ -16,9 +12,9 @@ new WOW().init();
 ////////////////////////////////////////////////@2020
 
 //rellax #2:start
-var rellax = new Rellax(".rellax", {
-  center: true,
-});
+// var rellax = new Rellax(".rellax", {
+//   center: true,
+// });
 //rellax #2:end
 
 ////////////////////////////////////////////////@2020
@@ -79,17 +75,7 @@ if (document.querySelector("[data-easing]")) {
 
 /*
 one page smooth scroll easing:start
-*/
 
-////////////////////////////////////////////////@2020
-
-/*
-if inside div do this:start
-*/
-
-/*
-if inside div do this:end
-*/
 
 ////////////////////////////////////////////////@2020
 
@@ -100,18 +86,21 @@ Jquery breakpoints:start
 // var isBreakPoint = function (bp) {
 //   var bps = [320, 480, 768, 1024],
 //     w = $(window).width(),
-//     min, max
+//     min, max;
 //   for (var i = 0, l = bps.length; i < l; i++) {
 //     if (bps[i] === bp) {
-//       min = bps[i - 1] || 0
-//       max = bps[i]
-//       break
+//       min = bps[i - 1] || 0;
+//       max = bps[i];
+//       break;
 //     }
 //   }
-//   return w > min && w <= max
+//   return w > min && w <= max;
+// };
+
+// if (isBreakPoint(768)) {
+
 // }
 
-// if (isBreakPoint(480)) {}
 /*
 Jquery breakpoints:end
 */
@@ -119,7 +108,7 @@ Jquery breakpoints:end
 ////////////////////////////////////////////////@2020
 
 /*
-ons scroll do this:start
+on scroll do this:start
 */
 // $(function () {
 //   var backToTop = $(".emf-bottom-box");
@@ -161,7 +150,22 @@ if !E=doThisHere():end
 
 ////////////////////////////////////////////////@2020
 
-//coming-soon-box-animation
-// $('.coming-soon-note').delay(9000).css({
-//   "background":"#252525"
-// });
+$('.ehs-gtb, .a-ehs-gtb').on('mouseenter', function(){
+  $('.ehs-temp-title, .a-ehs-temp-title').css({
+    "color":"white"
+  });
+});
+
+$('.ehs-gtb, .a-ehs-gtb').on('mouseleave', function(){
+  $('.ehs-temp-title, .a-ehs-temp-title').css({
+    "color":""
+  });
+});
+
+$('.ehs-gtb, .a-ehs-gtb').on('click', function(){
+  $('.ehs-temp-title, .a-ehs-temp-title').css({
+    "margin-top":"-2em"
+  });
+  // $('.el-hero-section').addClass('');
+});
+

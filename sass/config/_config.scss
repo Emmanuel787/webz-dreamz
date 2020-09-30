@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
-@import url("https://use.typekit.net/fhb7qld.css");
+@import url("https://use.typekit.net/elk7qgv.css");
 
 //fonts
-$aviano: aviano-serif, serif;
-// $hs-title-font: 'Prata', serif;
-// $hs-title-font: aviano-serif, serif;
-$hs-title-font: neuropol-nova, sans-serif;
-$title-font: 'Source Code Pro', monospace;
-$content-font: 'Roboto', sans-serif;
+$content-font: quatro, sans-serif;
+$title: bd-colonius, sans-serif;
+
 
 //font-base
 $em-base: 62.5%;
@@ -19,15 +15,14 @@ $em-base-big-desktop: 75%;
 
 //////color palette set CHANGE !!!
 //
-$primary-color: #3b3b3b;
-$secondary-color: #3b3b3b;
+$primary-color: #1f1f1f;
+$secondary-color: #161337;
+// $secondary-color: ;
 
-$tertiary-color: rgb(84, 139, 114);
-$quatenary-color: rgb(196, 78, 78);
+// $tertiary-color: ;
+// $quatenary-color:;
 // $quinary-color: ;
 
 // $title-color: ;
 
 $white: #ffffff;
-$darko: #3b3b3b;
-$body: #1f1f1f;

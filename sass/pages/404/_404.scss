@@ -37,7 +37,7 @@
 }
 //text
 .mc-not-found{
-  @include typo(3em, $darko, 900);
+  @include typo(3em, $primary-color, 900);
   margin-bottom: .2em;
   @include responsive(big-desktop){
     @include typo(5em, $white, 700);

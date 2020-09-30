@@ -1,0 +1,11 @@
+.el-main-header{
+  @include col(4/4); margin-right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+  padding: 1.5em 2em;
+  background: #ffffff0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0; left: 0;
+}

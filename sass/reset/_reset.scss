@@ -57,17 +57,17 @@ html{
 
 body {
   font-family: 'Roboto', sans-serif !important;
-  background: $body;
+  font-weight: 300;
+  background: $primary-color;
   overflow-x: hidden;
   line-height: 1.5;
+  position: relative;
+  right: 0;
   /* Better Font Rendering =========== */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  transition: background 1s ease-in-out;
 }
-// .a-body{
-//   background: #1f1f1f;
-// }
+
 ol, ul {
   list-style: none;
 }

@@ -1,80 +1,18 @@
-//el-hero-section
+//header
 .el-brand{
-  @include typo(3em, $white, 500);
-  font-family: $title-font;
-  font-family: $hs-title-font;
-  @include responsive(tab-land){
-    @include typo(2.5em, $white, 500);
-  }
-  @include responsive(tab-port){
-    @include typo(2.5em, $white, 500);
-  }
-  @include responsive(phone){
-    @include typo(2em, $white, 500);
-  }
-  // font-family: $content-font;
+  @include typo(1.2em, $white, 400);
+  font-family: bd-colonius, sans-serif;
 }
 
-.ehs-ul{
-  @include responsive(phone){
-    display: none;
-  }
-  .ehs-nav-list{
-    @include typo(1em, $white, 500);
-    transition: color .3s ease-in-out;
-    font-family: $title-font;
-    font-family: $content-font;
-    &:hover{
-      cursor: pointer;
-      color: $tertiary-color;
-    }
-  }
+//hero-section
+.ehs-temp-title{
+  @include typo(7em, $secondary-color, 900);
+  font-family: bd-colonius, sans-serif;
+  transition: color .3s ease-in-out;
+  transition: margin-top 1s ease-in;
 }
 
-.ecb-text{
-  @include typo(6em, $white, 800);
-  line-height: 1em;
-  font-family: $aviano;
-  font-weight: 400;
-  font-style: normal;
-
-  @include responsive(phone){
-    @include typo(6.5em, $white, 500);
-  }
-}
-.ecb-color-anim{
-  animation: colorChange 40s cubic-bezier(0.19, 1, 0.22, 1) infinite;
-    -moz-animation: colorChange 40s cubic-bezier(0.19, 1, 0.22, 1) infinite;
-      -webkit-animation: colorChange 40s cubic-bezier(0.19, 1, 0.22, 1) infinite;
-        -o-animation: colorChange 40s cubic-bezier(0.19, 1, 0.22, 1) infinite;
-  animation-delay: 5s;
-
-  @keyframes colorChange {
-    0%{
-      color: $white;
-    }
-    25%{
-      color: rgb(196, 78, 78);
-    }
-    50%{
-      color: rgb(84, 139, 114);
-    }
-    75%{
-      color: rgb(37, 37, 37);
-    }
-    100%{
-      color: $white;
-    }
-  }
-}
-//coming-soon
-.csn-txt{
-  @include typo(1.3em, $white, 400);
-  font-family: $title-font;
-  // font-family: $hs-title-font;
-}
-
-//randoms
-.g50-txt{
-  color: $tertiary-color;
+//random-codez
+.sc__{
+  color: $secondary-color;
 }
